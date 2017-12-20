@@ -2,7 +2,7 @@ require 'pry'
 
 def my_find(collection)
   if block_given?
-    
+
   i = 0
   while i < collection.length
     return collection[i] if yield(collection[i])
@@ -12,6 +12,6 @@ def my_find(collection)
 
   else
     nil
-  end  
-  
+  end
+
 end
